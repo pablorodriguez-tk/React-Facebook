@@ -1,13 +1,11 @@
 import React from 'react';
 import { BootstrapFill, Search } from 'react-bootstrap-icons';
-import { Link } from 'react-router-dom';
+import MenuButton from '../../MenuButton/MenuButton';
 
 const LogoAndSearchbar = () => {
   return (
     <div className="col col-lg-3 col-xl-2 d-flex align-items-center order-1 order-lg-1">
-      <Link to="#" className="logo me-2">
-        <BootstrapFill />
-      </Link>
+      <MenuButton Icono={BootstrapFill} link="#" clase="logo me-2" />
       <div className="barra-busqueda d-none d-sm-block">
         <div className="icono">
           <Search />

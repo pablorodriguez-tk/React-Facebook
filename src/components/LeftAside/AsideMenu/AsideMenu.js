@@ -7,52 +7,25 @@ import {
   PeopleFill,
   TvFill,
 } from 'react-bootstrap-icons';
-import { Link } from 'react-router-dom';
 import Persona2 from '../../../img/persona2.jpg';
+import MenuItem from '../../MenuItem/MenuItem';
+import User from '../../User/User';
 
 const AsideMenu = () => {
   return (
     <nav>
-      <Link to="#" className="perfil">
-        <img src={Persona2} alt="" />
-        Pablo Rodriguez
-      </Link>
-      <Link to="#">
-        <div className="icono">
-          <PeopleFill size={20} />
-        </div>
-        Amigos
-      </Link>
-      <Link to="#">
-        <div className="icono">
-          <FlagFill size={20} />
-        </div>
-        Páginas
-      </Link>
-      <Link to="#">
-        <div className="icono">
-          <CollectionFill size={20} />
-        </div>
-        Grupos
-      </Link>
-      <Link to="#">
-        <div className="icono">
-          <BagFill size={20} />
-        </div>
-        Marketplace
-      </Link>
-      <Link to="#">
-        <div className="icono">
-          <TvFill size={20} />
-        </div>
-        Watch
-      </Link>
-      <Link to="#">
-        <div className="icono">
-          <CalendarEventFill />
-        </div>
-        Eventos
-      </Link>
+      <User user={Persona2} clase="perfil" name="Pablo Rodriguez" />
+      <MenuItem Icono={PeopleFill} etiqueta="Amigos" size={20} link="#" />
+      <MenuItem Icono={FlagFill} etiqueta="Páginas" size={20} link="#" />
+      <MenuItem Icono={CollectionFill} etiqueta="Grupos" size={20} link="#" />
+      <MenuItem Icono={BagFill} etiqueta="Marketplace" size={20} link="#" />
+      <MenuItem Icono={TvFill} etiqueta="Watch" size={20} link="#" />
+      <MenuItem
+        Icono={CalendarEventFill}
+        etiqueta="Eventos"
+        size={20}
+        link="#"
+      />
     </nav>
   );
 };

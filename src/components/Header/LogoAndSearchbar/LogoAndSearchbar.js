@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const LogoAndSearchbar = () => {
   return (
-    <div className="col-2 d-flex align-items-center">
+    <div className="col col-lg-3 col-xl-2 d-flex align-items-center order-1 order-lg-1">
       <Link to="#" className="logo me-2">
         <BootstrapFill />
       </Link>
-      <div className="barra-busqueda">
+      <div className="barra-busqueda d-none d-sm-block">
         <div className="icono">
           <Search />
         </div>

@@ -123,3 +123,35 @@ header .botones .perfil img {
   border-radius: 100px;
   margin-right: 5px;
 }
+
+/* =================================================================*/
+/* =============================MEDIAQUERIES========================*/
+/* =================================================================*/
+
+/* Dispositivo xs */
+@media screen and (max-width: 320px) {
+}
+/* Dispositivo sm */
+@media screen and (max-width: 576px) {
+}
+/* Dispositivo md */
+@media screen and (max-width: 768px) {
+}
+/* Dispositivo lg */
+@media screen and (max-width: 992px) {
+  header {
+    padding-top: 10px;
+  }
+  .menu {
+    margin-top: 10px;
+  }
+}
+/* Dispositivo xl */
+@media screen and (max-width: 1200px) {
+  header .menu a {
+    padding: 10px 20px;
+  }
+}
+/* Dispositivo xxl */
+@media screen and (max-width: 1400px) {
+}

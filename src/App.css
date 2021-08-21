@@ -125,6 +125,57 @@ header .botones .perfil img {
 }
 
 /* =================================================================*/
+/* ===============================ASIDE=============================*/
+/* =================================================================*/
+
+aside {
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+/* ASIDE ENLACES RAPIDOS */
+
+.enlaces-rapidos > nav a {
+  display: flex;
+  align-items: center;
+  color: var(--blanco);
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.enlaces-rapidos > nav a:hover {
+  background: var(--input-hover);
+}
+
+.enlaces-rapidos .perfil img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.enlaces-rapidos .icono {
+  margin-right: 20px;
+}
+
+/* ASIDE FOOTER */
+footer {
+  margin: 40px 0;
+}
+
+footer nav a {
+  font-size: 14px;
+  margin-right: 7px;
+  color: var(--gris-claro);
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+  color: var(--gris-claro);
+}
+
+/* =================================================================*/
 /* =============================MEDIAQUERIES========================*/
 /* =================================================================*/
 
@@ -136,6 +187,9 @@ header .botones .perfil img {
 }
 /* Dispositivo md */
 @media screen and (max-width: 768px) {
+  .enlaces-rapidos {
+    display: none;
+  }
 }
 /* Dispositivo lg */
 @media screen and (max-width: 992px) {
@@ -144,6 +198,9 @@ header .botones .perfil img {
   }
   .menu {
     margin-top: 10px;
+  }
+  aside {
+    padding-top: 130px;
   }
 }
 /* Dispositivo xl */

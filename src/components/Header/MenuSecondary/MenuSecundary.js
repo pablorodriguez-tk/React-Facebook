@@ -7,7 +7,7 @@ const MenuSecundary = () => {
   return (
     <nav className="botones col-auto col-lg-3 col-xl-2 text-end d-flex align-items-center justify-content-end order-2 order-lg-3">
       <Link to="#" className="perfil">
-        <img src={Persona2} alt="" /> Carlos
+        <img src={Persona2} alt="" /> Pablo
       </Link>
       <Link to="#">
         <GridFill />

@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <div className="App">
         <div className="container-fluid">
-          <div className="row justify-content-center justify-content-md-between">
+          <div className="contenido-principal row justify-content-center justify-content-md-between">
             <Header />
             <LeftAside />
             <Main />

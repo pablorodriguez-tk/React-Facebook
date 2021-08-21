@@ -7,14 +7,14 @@ import {
   PeopleFill,
   TvFill,
 } from 'react-bootstrap-icons';
-import Persona2 from '../../../img/persona2.jpg';
+import { database } from '../../../database/database';
 import MenuItem from '../../MenuItem/MenuItem';
 import User from '../../User/User';
 
 const AsideMenu = () => {
   return (
     <nav>
-      <User user={Persona2} clase="perfil" name="Pablo Rodriguez" />
+      <User user={database[1].foto} clase="perfil" name={database[1].nombre} />
       <MenuItem Icono={PeopleFill} etiqueta="Amigos" size={20} link="#" />
       <MenuItem Icono={FlagFill} etiqueta="Páginas" size={20} link="#" />
       <MenuItem Icono={CollectionFill} etiqueta="Grupos" size={20} link="#" />

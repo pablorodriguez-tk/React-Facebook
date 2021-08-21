@@ -222,6 +222,147 @@ footer nav a:hover {
 }
 
 /* =================================================================*/
+/* ================================MAIN=============================*/
+/* =================================================================*/
+
+main {
+  padding-top: 70px;
+}
+
+main .publicar,
+main .publicacion {
+  background: var(--fondo-contenido);
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+main .publicar .formulario {
+  display: flex;
+  justify-self: start;
+}
+
+main .foto {
+  display: block;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+main .foto img {
+  width: 100%;
+}
+
+main .publicar .formulario input {
+  width: 100%;
+  border: none;
+  background: var(--input);
+  color: var(--texto);
+  height: 40px;
+  border-radius: 100px;
+  padding: 0 20px;
+}
+
+main .publicar .botones a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+main .publicar .botones a:hover {
+  background: var(--input-hover);
+  color: var(--texto);
+}
+
+main .publicar .botones a svg {
+  margin-right: 7px;
+}
+
+/* =================================================================*/
+/* =============================PUBLICACION========================*/
+/* =================================================================*/
+
+main .publicacion .header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+main .publicacion .header .datos {
+  display: flex;
+  flex-direction: column;
+}
+
+main .publicacion .header .datos .nombre {
+  color: var(--blanco);
+}
+
+main .publicacion .header .datos .hora {
+  color: var(--texto);
+  font-size: 14px;
+}
+
+main .publicacion .header .datos .hora:hover {
+  color: var(--texto);
+}
+
+main .publicacion .header .datos a:hover {
+  text-decoration: underline;
+  color: var(--texto);
+}
+
+main .publicacion .body p {
+  margin-bottom: 10px;
+  color: var(--blanco);
+}
+
+main .publicacion .body img {
+  width: 100%;
+}
+
+main .publicacion .comentarios {
+  padding: 10px;
+}
+
+main .publicacion .comentarios .me-gusta svg {
+  margin-right: 5px;
+  color: #e75151;
+}
+
+main .publicacion .comentarios a,
+main .publicacion .comentarios .me-gusta {
+  color: var(--texto);
+}
+
+main .publicacion .comentarios a:hover {
+  text-decoration: underline;
+  color: var(--texto);
+}
+
+main .publicacion .botones button {
+  width: 100%;
+  border: none;
+  background: none;
+  color: var(--texto);
+  padding: 10px;
+  border-radius: 3px;
+}
+
+main .publicacion .botones button:hover {
+  background: var(--input);
+}
+
+main .publicacion .botones button svg {
+  margin-right: 5px;
+}
+
+/* =================================================================*/
 /* =============================MEDIAQUERIES========================*/
 /* =================================================================*/
 
@@ -246,8 +387,8 @@ footer nav a:hover {
   .menu {
     margin-top: 10px;
   }
-  aside {
-    padding-top: 130px;
+  .contenido-principal {
+    padding-top: 70px;
   }
 }
 /* Dispositivo xl */

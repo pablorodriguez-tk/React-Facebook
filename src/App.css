@@ -130,7 +130,7 @@ header .botones .perfil img {
 
 aside {
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   padding-top: 60px;
 }
 
@@ -176,6 +176,52 @@ footer nav a:hover {
 }
 
 /* =================================================================*/
+/* ===========================ASIDE DERECHO=========================*/
+/* =================================================================*/
+
+.contactos .seccion {
+  margin-bottom: 20px;
+}
+
+.contactos .titulo {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--gris-claro);
+  margin-bottom: 10px;
+}
+
+.contactos .publicidad {
+  display: block;
+  max-height: 100px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.contactos .publicidad img {
+  width: 100%;
+}
+
+.contactos nav a {
+  display: flex;
+  align-items: center;
+  color: var(--blanco);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contactos nav a:hover {
+  background: var(--input-hover);
+}
+
+.contactos nav a img {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+/* =================================================================*/
 /* =============================MEDIAQUERIES========================*/
 /* =================================================================*/
 
@@ -187,7 +233,8 @@ footer nav a:hover {
 }
 /* Dispositivo md */
 @media screen and (max-width: 768px) {
-  .enlaces-rapidos {
+  .enlaces-rapidos,
+  .contactos {
     display: none;
   }
 }

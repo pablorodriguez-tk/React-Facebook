@@ -1,14 +1,22 @@
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/Header/Header';
-import Aside from './components/Aside/Aside';
+import LeftAside from './components/LeftAside/LeftAside';
+import Main from './components/Main/Main';
+import RightAside from './components/RightAside/RightAside';
 
 const App = () => {
   return (
     <Router>
       <div className="App">
-        <Header />
-        <Aside />
+        <div className="container-fluid">
+          <div className="row justify-content-center justify-content-md-between">
+            <Header />
+            <LeftAside />
+            <Main />
+            <RightAside />
+          </div>
+        </div>
       </div>
     </Router>
   );
